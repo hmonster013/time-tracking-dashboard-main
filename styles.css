@@ -110,15 +110,21 @@ body {
   text-align: start;
   padding-left: 24px;
   border: none;
-  transition: background-color 0.3s, opacity 0.3s;
+  border-radius: 10px;
+  cursor: pointer; /* Con trỏ chuột dạng pointer */
+  transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s;
 }
 
 .card__profile button:hover {
-  background-color: hsla(235, 46%, 20%, 0.8);
+  background-color: hsla(235, 46%, 40%, 0.8); /* Màu sáng hơn */
+  transform: scale(1.05); /* Phóng to nhẹ */
+  opacity: 0.9; /* Giảm độ trong suốt */
 }
 
 .card__profile button:active {
-  background-color: hsla(235, 46%, 20%, 0.8);
+  background-color: hsla(235, 46%, 30%, 1); /* Màu đậm hơn */
+  transform: scale(0.98); /* Thu nhỏ nhẹ */
+  opacity: 1; /* Trở lại hoàn toàn rõ */
 }
 
 .card__work {
