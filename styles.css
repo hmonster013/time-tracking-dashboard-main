@@ -178,3 +178,164 @@ body {
   color: var(--Desaturated-blue);
 }
 
+@media (max-width: 1000px) {
+  .container {
+    width: 485px;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    gap: 27px;
+  }
+
+  .card__profile {
+    width: 100%;
+    height: auto;
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: var(--Dark-blue);
+  }
+
+  .card__profile--header {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .card__profile--header h2 {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .card__profile--header h1 {
+    position: absolute;
+    left: 118px;
+    top: 72px;
+  }
+
+  .card__profile--body {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .card__work {
+    grid-area: 2 / 1;
+    background-color: var(--Light-red-work);
+    background-image: url('./images/icon-work.svg');
+  }
+  
+  .card__play {
+    grid-area: 2 / 2;
+    background-color: var(--Soft-blue-play);
+    background-image: url('./images/icon-play.svg');
+  }
+  
+  .card__study {
+    grid-area: 3 / 1;
+    background-color: var(--Light-red-study);
+    background-image: url('./images/icon-study.svg');
+  }
+  
+  .card__exercise {
+    grid-area: 3 / 2;
+    background-color: var(--Lime-green-exercise);
+    background-image: url('./images/icon-exercise.svg');
+  }
+  
+  .card__social {
+    grid-area: 4 / 1;
+    background-color: var(--Violet-social);
+    background-image: url('./images/icon-social.svg');
+  }
+  
+  .card__self-care {
+    grid-area: 4 / 2;
+    background-color: var(--Soft-orange-self-care);
+    background-image: url('./images/icon-self-care.svg');
+  }
+}
+
+@media (max-width: 485px) {
+  .container {
+    width: 375px;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    gap: 27px;
+  }
+
+  .card__profile {
+    width: 100%;
+    height: auto;
+    grid-area: 1 / 1 ;
+    background-color: var(--Dark-blue);
+  }
+
+  .card__profile--header {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .card__profile--header h2 {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .card__profile--header h1 {
+    position: absolute;
+    left: 118px;
+    top: 72px;
+  }
+
+  .card__profile--body {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .card__work {
+    width: 100%;
+    grid-area: 2 / 1;
+    background-color: var(--Light-red-work);
+    background-image: url('./images/icon-work.svg');
+  }
+  
+  .card__play {
+    width: 100%;
+    grid-area: 3 / 1;
+    background-color: var(--Soft-blue-play);
+    background-image: url('./images/icon-play.svg');
+  }
+  
+  .card__study {
+    width: 100%;
+    grid-area: 4 / 1;
+    background-color: var(--Light-red-study);
+    background-image: url('./images/icon-study.svg');
+  }
+  
+  .card__exercise {
+    width: 100%;
+    grid-area: 5 / 1;
+    background-color: var(--Lime-green-exercise);
+    background-image: url('./images/icon-exercise.svg');
+  }
+  
+  .card__social {
+    width: 100%;
+    grid-area: 6 / 1;
+    background-color: var(--Violet-social);
+    background-image: url('./images/icon-social.svg');
+  }
+  
+  .card__self-care {
+    width: 100%;
+    grid-area: 7 / 1;
+    background-color: var(--Soft-orange-self-care);
+    background-image: url('./images/icon-self-care.svg');
+  }
+
+  .card__content {
+    width: 100%;
+  }
+}
